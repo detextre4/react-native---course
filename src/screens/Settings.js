@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Button } from 'react-native'
+import { View, Text, Button, SafeAreaView } from 'react-native'
 import { StyleSheet } from 'react-native';
 
 export default function Settings(props) {
@@ -9,12 +9,12 @@ export default function Settings(props) {
   }
   
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text>Settings</Text>
       <Text>esto</Text>
       <Text>es el settings</Text>
       <Button title='ir a home' onPress={() => goToPage("Home")}></Button>
-    </View>
+    </SafeAreaView>
   )
 }
 
